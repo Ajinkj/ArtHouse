@@ -1,4 +1,4 @@
-# Event's Club
+# ArtHouse
 The Event Mentee is an event management platform for creating the events for organizers and registering the events for who wish to participate in it.
 Event Mentee has features like 
 - Create events
