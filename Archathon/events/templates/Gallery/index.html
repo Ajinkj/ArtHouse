@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ArtHouse Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'G/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'G/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+
+						
+					
+
+				<!-- Main -->
+					<div id="main">
+						{% for p in photos.all%}
+						<article class="thumb">
+							<a href="{{ p.photo.url }}" class="image"><img src="{{ p.photo.url }}" alt="" /></a>
+							<h2>{{ p.photo_name }}"</h2>
+							<p>{{ p.photo_Desc }}</p>
+						</article>
+						{% endfor %}
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+			
+								
+								
+							
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'G/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'G/assets/js/jquery.poptrox.min.js' %}"></script>
+			<script src="{% static 'G/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'G/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'G/assets/js/util.js' %}"></script>
+			<script src="{% static 'G/assets/js/main.js' %}"></script>
+
+	</body>
+</html>
